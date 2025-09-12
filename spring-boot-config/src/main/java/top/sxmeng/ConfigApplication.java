@@ -1,13 +1,11 @@
-package top.sxmeng.springbootcourse;
+package top.sxmeng;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringBootCourseApplication {
-
+public class ConfigApplication {
     public static void main(String[] args) {
-        SpringApplication.run(SpringBootCourseApplication.class, args);
+        SpringApplication.run(ConfigApplication.class, args);
     }
-
 }
