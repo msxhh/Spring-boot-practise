@@ -24,7 +24,7 @@ public class SmsServiceImpl implements SmsService {
         int code = ThreadLocalRandom.current().nextInt(1000, 9999);
         log.info("发送短信验证码：{}", code);
 
-        //生产环境请求地址：app.cloopen.com
+        //生产环境请求地址
         String serverIp = cloopenConfig.getServerIp();
         //请求端口
         String serverPort = cloopenConfig.getPort();
@@ -54,7 +54,6 @@ public class SmsServiceImpl implements SmsService {
                 log.info("{} = {}", key, object);
             }
         }else{
-            //异常返回输出错误码和错误信息
             System.out.println("错误码=" + result.get("statusCode") +" 错误信息= "+result.get("statusMsg"));
         }
     }
