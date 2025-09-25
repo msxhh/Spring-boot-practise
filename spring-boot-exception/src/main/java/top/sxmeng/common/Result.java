@@ -5,54 +5,52 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import top.sxmeng.enums.ErrorCode;
 
+import java.time.Instant;
+
+/**
+ * 统一API响应结果封装
+ */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class ApiResponse<T> {
-    private int code = 0;
+public class Result<T> {
+    /**
+     * 响应状态码：200成功，其他为错误
+     */
+    private int code = 200;
 
+    /**
+     * 响应消息
+     */
     private String msg = "success";
 
+    /**
+     * 响应数据
+     */
     private T data;
 
-    public static <T> ApiResponse<T> ok() {
-        return ok(null);
+    /**
+     * 响应时间戳
+     */
+    private long timestamp = Instant.now().toEpochMilli();
+
+    // 成功响应（带数据）
+    public static <T> Result<T> success(T data) {
+        return new Result<>(200, "success", data, Instant.now().toEpochMilli());
     }
 
-    public static <T> ApiResponse<T> ok(T data) {
-        ApiResponse<T> result = new ApiResponse<>();
-        result.setData(data);
-        return result;
+    // 成功响应（无数据）
+    public static Result<Void> success() {
+        return new Result<>(200, "success", null, Instant.now().toEpochMilli());
     }
 
-    public static <T> ApiResponse<T> error() {
-        return error(ErrorCode.SERVER_ERROR);
+    // 错误响应（使用ErrorCode枚举）
+    public static <T> Result<T> error(ErrorCode errorCode) {
+        return new Result<>(errorCode.getCode(), errorCode.getMsg(), null, Instant.now().toEpochMilli());
     }
 
-    public static <T> ApiResponse<T> error(String msg) {
-        return error(ErrorCode.SERVER_ERROR.getCode(), msg);
-    }
-
-    public static <T> ApiResponse<T> error(ErrorCode errorCode) {
-        return error(errorCode.getCode(), errorCode.getMsg());
-    }
-
-    public static <T> ApiResponse<T> error(int code, String msg) {
-        ApiResponse<T> result = new ApiResponse<>();
-        result.setCode(code);
-        result.setMsg(msg);
-        return result;
-    }
-
-    public static <T> ApiResponse<T> success(T data) {
-        return new ApiResponse<>(200, "操作成功", data);
-    }
-
-    public static ApiResponse<Void> success() {
-        return new ApiResponse<>(200, "操作成功", null);
-    }
-
-    public static ApiResponse<Void> fail(Integer code, String message) {
-        return new ApiResponse<>(code, message, null);
+    // 错误响应（自定义消息）
+    public static <T> Result<T> error(int code, String msg) {
+        return new Result<>(code, msg, null, Instant.now().toEpochMilli());
     }
 }
