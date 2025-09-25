@@ -1,7 +1,31 @@
-package top.sxmeng.boot.redis;
+package top.sxmeng.boot.redis.exception;
 
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import top.sxmeng.boot.redis.enums.ErrorCode;
+
+@Data
+@EqualsAndHashCode(callSuper = true)
 public class ServerException extends RuntimeException {
-  public ServerException(String message) {
-    super(message);
-  }
+
+    private int code;
+    private String msg;
+
+    public ServerException(String message) {
+        super(message);
+        this.code = ErrorCode.INTERNAL_SERVER_ERROR.getCode();
+        this.msg = message;
+    }
+
+    public ServerException(ErrorCode errorCode) {
+        super(errorCode.getMsg());
+        this.code = errorCode.getCode();
+        this.msg = errorCode.getMsg();
+    }
+
+    public ServerException(String msg, Throwable e) {
+        super(msg, e);
+        this.code = ErrorCode.INTERNAL_SERVER_ERROR.getCode();
+        this.msg = msg;
+    }
 }

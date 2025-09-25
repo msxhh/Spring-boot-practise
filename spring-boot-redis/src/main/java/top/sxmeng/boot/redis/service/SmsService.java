@@ -1,4 +1,5 @@
 package top.sxmeng.boot.redis.service;
 
-public class SmsService {
+public interface SmsService {
+    boolean sendSms(String phone);
 }
