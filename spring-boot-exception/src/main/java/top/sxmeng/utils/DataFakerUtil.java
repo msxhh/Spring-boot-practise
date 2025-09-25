@@ -1,4 +1,4 @@
-package top.sxmeng.util;
+package top.sxmeng.utils;
 
 import jakarta.annotation.Resource;
 import net.datafaker.Faker;
