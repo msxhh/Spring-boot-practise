@@ -1,4 +1,4 @@
-package top.jwxiang.service;
+package top.sxmeng.mp.service;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -6,9 +6,9 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
-import top.jwxiang.entity.UserAccount;
-import top.jwxiang.mapper.UserAccountMapper;
-import top.jwxiang.service.impl.UserAccountServiceImpl;
+import top.sxmeng.mp.entity.UserAccount;
+import top.sxmeng.mp.mapper.UserAccountMapper;
+import top.sxmeng.mp.service.impl.UserAccountServiceImpl;
 
 import java.time.LocalDateTime;
 

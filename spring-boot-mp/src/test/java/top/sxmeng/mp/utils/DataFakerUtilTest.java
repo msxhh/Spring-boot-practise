@@ -1,4 +1,4 @@
-package top.jwxiang.utils;
+package top.sxmeng.mp.utils;
 
 import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;

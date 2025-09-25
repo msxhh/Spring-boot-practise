@@ -24,10 +24,10 @@ mybatis-plus:
       insert-strategy: not_null
       update-strategy: not_null
       # 实体类别名包
-      type-aliases-package: top.jwxiang.mp.entity
+      type-aliases-package: top.sxmeng.mp.entity
 # ⽇志配置
 logging:
   level:
     # ⽇志级别，debug 为打印 SQL 语句
-    top.jwxiang.mp: debug
+    top.sxmeng.mp: debug
     com.baomidou.mybatisplus: debug
