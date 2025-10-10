@@ -1,4 +1,4 @@
-package top.sxmeng.boot.schedule.filter.interceptor.entity;
+package top.sxmeng.boot.filter.interceptor.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

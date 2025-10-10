@@ -1,4 +1,4 @@
-package top.sxmeng.boot.schedule.filter.interceptor.interceptor;
+package top.sxmeng.boot.filter.interceptor.interceptor;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import jakarta.servlet.http.HttpServletRequest;

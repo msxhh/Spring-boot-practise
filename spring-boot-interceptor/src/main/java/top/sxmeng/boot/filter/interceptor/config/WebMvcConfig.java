@@ -1,13 +1,13 @@
-package top.sxmeng.boot.schedule.filter.interceptor.config;
+package top.sxmeng.boot.filter.interceptor.config;
 
 import lombok.AllArgsConstructor;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
-import top.sxmeng.boot.schedule.filter.interceptor.interceptor.BusinessLogInterceptor;
-import top.sxmeng.boot.schedule.filter.interceptor.interceptor.ParamValidateInterceptor;
-import top.sxmeng.boot.schedule.filter.interceptor.interceptor.RoleAuthInterceptor;
-import top.sxmeng.boot.schedule.filter.interceptor.interceptor.TimeStatInterceptor;
+import top.sxmeng.boot.filter.interceptor.interceptor.BusinessLogInterceptor;
+import top.sxmeng.boot.filter.interceptor.interceptor.ParamValidateInterceptor;
+import top.sxmeng.boot.filter.interceptor.interceptor.RoleAuthInterceptor;
+import top.sxmeng.boot.filter.interceptor.interceptor.TimeStatInterceptor;
 
 @Configuration
 @AllArgsConstructor

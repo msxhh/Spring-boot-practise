@@ -1,12 +1,12 @@
-package top.sxmeng.boot.schedule.filter.interceptor.config;
+package top.sxmeng.boot.filter.interceptor.config;
 
 import lombok.AllArgsConstructor;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import top.sxmeng.boot.schedule.filter.interceptor.filter.CorsFilter;
-import top.sxmeng.boot.schedule.filter.interceptor.filter.LogFilter;
-import top.sxmeng.boot.schedule.filter.interceptor.filter.RateLimitFilter;
+import top.sxmeng.boot.filter.interceptor.filter.CorsFilter;
+import top.sxmeng.boot.filter.interceptor.filter.LogFilter;
+import top.sxmeng.boot.filter.interceptor.filter.RateLimitFilter;
 
 import java.util.ArrayList;
 import java.util.List;

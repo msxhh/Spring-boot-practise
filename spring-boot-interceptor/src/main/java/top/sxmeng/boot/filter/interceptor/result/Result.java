@@ -1,4 +1,4 @@
-package top.sxmeng.boot.schedule.filter.interceptor.result;
+package top.sxmeng.boot.filter.interceptor.result;
 
 public class Result<T> {
     private int code;

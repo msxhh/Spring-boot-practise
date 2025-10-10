@@ -1,4 +1,4 @@
-package top.sxmeng.boot.schedule.filter.interceptor.dto;
+package top.sxmeng.boot.filter.interceptor.dto;
 
 import jakarta.validation.constraints.NotBlank;
 import lombok.Data;

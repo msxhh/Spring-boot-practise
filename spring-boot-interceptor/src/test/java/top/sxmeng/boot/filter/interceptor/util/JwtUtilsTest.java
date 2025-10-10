@@ -1,4 +1,4 @@
-package top.sxmeng.boot.schedule.filter.interceptor.util;
+package top.sxmeng.boot.filter.interceptor.util;
 
 import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;

@@ -1,9 +1,9 @@
-package top.sxmeng.boot.schedule.filter.interceptor.service;
+package top.sxmeng.boot.filter.interceptor.service;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
-import top.sxmeng.boot.schedule.filter.interceptor.dto.LoginRequest;
-import top.sxmeng.boot.schedule.filter.interceptor.entity.User;
+import top.sxmeng.boot.filter.interceptor.dto.LoginRequest;
+import top.sxmeng.boot.filter.interceptor.entity.User;
 
 import java.util.HashSet;
 import java.util.Set;

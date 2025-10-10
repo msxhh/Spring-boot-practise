@@ -1,4 +1,4 @@
-package top.sxmeng.boot.schedule.filter.interceptor.interceptor;
+package top.sxmeng.boot.filter.interceptor.interceptor;
 
 import jakarta.annotation.Resource;
 import jakarta.servlet.http.HttpServletRequest;
@@ -6,7 +6,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.HandlerInterceptor;
-import top.sxmeng.boot.schedule.filter.interceptor.util.JwtUtil;
+import top.sxmeng.boot.filter.interceptor.util.JwtUtil;
 
 @Component
 @Slf4j

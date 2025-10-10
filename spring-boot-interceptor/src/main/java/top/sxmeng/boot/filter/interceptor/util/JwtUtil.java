@@ -1,4 +1,4 @@
-package top.sxmeng.boot.schedule.filter.interceptor.util;
+package top.sxmeng.boot.filter.interceptor.util;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;

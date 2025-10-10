@@ -1,4 +1,4 @@
-package top.sxmeng.boot.schedule.filter.interceptor.annotation;
+package top.sxmeng.boot.filter.interceptor.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

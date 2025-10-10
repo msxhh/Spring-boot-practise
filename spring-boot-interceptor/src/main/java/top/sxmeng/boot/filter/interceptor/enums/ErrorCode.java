@@ -1,4 +1,4 @@
-package top.sxmeng.boot.schedule.filter.interceptor.enums;
+package top.sxmeng.boot.filter.interceptor.enums;
 
 public class ErrorCode {
 }

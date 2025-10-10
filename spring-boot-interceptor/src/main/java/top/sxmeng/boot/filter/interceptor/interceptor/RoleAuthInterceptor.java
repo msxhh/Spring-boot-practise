@@ -1,4 +1,4 @@
-package top.sxmeng.boot.schedule.filter.interceptor.interceptor;
+package top.sxmeng.boot.filter.interceptor.interceptor;
 
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
@@ -7,8 +7,8 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 import org.springframework.web.method.HandlerMethod;
 import org.springframework.web.servlet.HandlerInterceptor;
-import top.sxmeng.boot.schedule.filter.interceptor.annotation.RequireRole;
-import top.sxmeng.boot.schedule.filter.interceptor.util.JwtUtil;
+import top.sxmeng.boot.filter.interceptor.annotation.RequireRole;
+import top.sxmeng.boot.filter.interceptor.util.JwtUtil;
 
 import java.util.Arrays;
 import java.util.List;

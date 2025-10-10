@@ -1,12 +1,12 @@
-package top.sxmeng.boot.schedule.filter.interceptor.config;
+package top.sxmeng.boot.filter.interceptor.config;
 
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
-import top.sxmeng.boot.schedule.filter.interceptor.interceptor.MyInterceptor;
-import top.sxmeng.boot.schedule.filter.interceptor.interceptor.YourInterceptor;
+import top.sxmeng.boot.filter.interceptor.interceptor.MyInterceptor;
+import top.sxmeng.boot.filter.interceptor.interceptor.YourInterceptor;
 
 @Configuration
 @Slf4j

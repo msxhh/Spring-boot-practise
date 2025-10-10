@@ -1,8 +1,8 @@
-package top.sxmeng.boot.schedule.filter.interceptor.controller;
+package top.sxmeng.boot.filter.interceptor.controller;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
-import top.sxmeng.boot.schedule.filter.interceptor.result.Result;
+import top.sxmeng.boot.filter.interceptor.result.Result;
 
 /**
  * @author alani

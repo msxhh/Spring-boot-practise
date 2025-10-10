@@ -1,16 +1,16 @@
-package top.sxmeng.boot.schedule.filter.interceptor.controller;
+package top.sxmeng.boot.filter.interceptor.controller;
 
 import jakarta.servlet.http.HttpServletRequest;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
-import top.sxmeng.boot.schedule.filter.interceptor.annotation.RequireRole;
-import top.sxmeng.boot.schedule.filter.interceptor.dto.LoginRequest;
-import top.sxmeng.boot.schedule.filter.interceptor.dto.LoginResponse;
-import top.sxmeng.boot.schedule.filter.interceptor.entity.User;
-import top.sxmeng.boot.schedule.filter.interceptor.result.Result;
-import top.sxmeng.boot.schedule.filter.interceptor.service.UserService;
-import top.sxmeng.boot.schedule.filter.interceptor.util.JwtUtil;
+import top.sxmeng.boot.filter.interceptor.annotation.RequireRole;
+import top.sxmeng.boot.filter.interceptor.dto.LoginRequest;
+import top.sxmeng.boot.filter.interceptor.dto.LoginResponse;
+import top.sxmeng.boot.filter.interceptor.entity.User;
+import top.sxmeng.boot.filter.interceptor.result.Result;
+import top.sxmeng.boot.filter.interceptor.service.UserService;
+import top.sxmeng.boot.filter.interceptor.util.JwtUtil;
 
 @RestController
 @Slf4j

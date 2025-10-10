@@ -1,4 +1,4 @@
-package top.sxmeng.boot.schedule.filter.interceptor.interceptor;
+package top.sxmeng.boot.filter.interceptor.interceptor;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import jakarta.servlet.http.HttpServletRequest;
@@ -11,8 +11,8 @@ import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.util.ContentCachingRequestWrapper;
-import top.sxmeng.boot.schedule.filter.interceptor.dto.LoginRequest;
-import top.sxmeng.boot.schedule.filter.interceptor.result.Result;
+import top.sxmeng.boot.filter.interceptor.dto.LoginRequest;
+import top.sxmeng.boot.filter.interceptor.result.Result;
 
 import java.nio.charset.StandardCharsets;
 import java.util.Set;

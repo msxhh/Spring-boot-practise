@@ -1,4 +1,4 @@
-package top.sxmeng.boot.schedule.filter.interceptor.filter;
+package top.sxmeng.boot.filter.interceptor.filter;
 
 import jakarta.servlet.*;
 import lombok.extern.slf4j.Slf4j;

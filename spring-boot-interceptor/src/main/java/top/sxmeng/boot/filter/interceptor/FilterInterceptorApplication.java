@@ -1,4 +1,4 @@
-package top.sxmeng.boot.schedule.filter.interceptor;
+package top.sxmeng.boot.filter.interceptor;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
