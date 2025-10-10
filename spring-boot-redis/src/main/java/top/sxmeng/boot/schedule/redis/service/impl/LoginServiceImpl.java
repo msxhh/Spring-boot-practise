@@ -50,7 +50,6 @@ public class LoginServiceImpl implements LoginService {
             throw new ServerException("验证码错误");
         }
 
-
         // 验证码匹配成功，删除Redis中的验证码
         redisCache.delete(redisKey);
 

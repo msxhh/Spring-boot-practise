@@ -20,9 +20,6 @@
         <module>spring-boot-week-one</module>
         <module>spring-boot-config</module>
         <module>spring-boot-mp</module>
-        <module>spring-boot-exception</module>
-        <module>sp-111</module>
-        <module>spring-boot-redis</module>
     </modules>
 
     <properties>
@@ -31,8 +28,6 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <mybatis-plus.version>3.5.7</mybatis-plus.version>
         <mysql.version>8.3.0</mysql.version>
-        <datafaker.version>2.2.2</datafaker.version>
-        <java-sms-sdk.version>1.0.4</java-sms-sdk.version>
     </properties>
 
     <dependencies>
@@ -74,19 +69,6 @@
                 <groupId>com.mysql</groupId>
                 <artifactId>mysql-connector-j</artifactId>
                 <version>${mysql.version}</version>
-            </dependency>
-
-            <!-- DataFaker 数据生成 -->
-            <dependency>
-                <groupId>net.datafaker</groupId>
-                <artifactId>datafaker</artifactId>
-                <version>${datafaker.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.cloopen</groupId>
-                <artifactId>java-sms-sdk</artifactId>
-                <version>${java-sms-sdk.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

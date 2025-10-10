@@ -1,9 +1,11 @@
 server:
   port: 8888
-
 spring:
   profiles:
     active: test
+spring:
+  profiles:
+    active: dev
 
 # MyBatis-Plus 配置
 mybatis-plus:
@@ -25,9 +27,17 @@ mybatis-plus:
       update-strategy: not_null
       # 实体类别名包
       type-aliases-package: top.sxmeng.mp.entity
+
+  #Mapper XML 文件位置
+  mapper-locations: classpath*:mapper/*.xml
+  # 实体类别名包
+  type-aliases-package: top.sxmeng.boot.mp.entity
+
 # ⽇志配置
 logging:
   level:
     # ⽇志级别，debug 为打印 SQL 语句
     top.sxmeng.mp: debug
+    com.baomidou.mybatisplus: debug
+    top.sxmeng.boot.mp: debug
     com.baomidou.mybatisplus: debug

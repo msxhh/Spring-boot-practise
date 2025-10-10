@@ -23,3 +23,25 @@ logging:
     top.mqxu: DEBUG # 业务包调试级别（可调成INFO）
 file: # ⽇志⽂件路径
   name: /var/log/myapp/myapp.log
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://db.example.com:3306/my_mp_prod?useUnicode=true&characterEncoding=utf8&useSSL=true&serverTimezone=Asia/Shanghai
+    username:  ${DB_USER:myappuser}
+    password:  ${DB_PASS:myapppwd} # 替换为实际数据库密码
+    hikari:
+      maximum-pool-size: 30
+      minimum-idle: 10
+      idle-timeout: 30000
+      max-lifetime: 1800000
+      connection-timeout: 10000
+      pool-name: HikariCP
+server:
+  port: 8080
+  servlet:
+    context-path: /api
+
+logging:
+  level:
+    root: INFO
+    top.sxmeng: DEBUG # 业务包日志级别，可根据需要改为INFO
+  file:
+    name: /var/log/myapp/myapp.log
