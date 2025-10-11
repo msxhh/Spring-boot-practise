@@ -4,4 +4,4 @@ server:
 logging:
   level:
     org.springframework.web.socket: DEBUG  # ?? WebSocket ??? DEBUG ??
-    org.springframework.web.socket.server: DEBUG
+#    org.springframework.web.socket.server: DEBUG
